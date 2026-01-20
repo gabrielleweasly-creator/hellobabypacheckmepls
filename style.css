@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffebf0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+#sadText {
+  color: #d6336c;
+  margin: 10px 0;
+}
+
+.button-area {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+.choice {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice img {
+  width: 80px;
+  margin-bottom: 8px;
+}
+
+button {
+  padding: 14px 26px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+#yesBtn {
+  background-color: #ff4d6d;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+#noBtn {
+  background-color: #ccc;
+  position: absolute;
+  right: 15%;
+  top: 60%;
+}
+
+/* 💖 HEARTS */
+.heart {
+  position: fixed;
+  bottom: -10px;
+  font-size: 24px;
+  animation: floatUp 5s linear infinite;
+  color: #ff4d6d;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
